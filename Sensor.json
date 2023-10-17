@@ -1,7 +1,7 @@
 {
 	"$schema": "http://json-schema.org/schema#",
 	"$schemaVersion": "0.0.3",
-	"$id": "https://TODO/Sensor.json",
+	"$id": "https://n5geh.github.io/n5geh.test-datamodel.io/Sensor.json",
 	"description": "This entity captures the static properties of common iot sensor",
 	"type": "object",
 	"properties": {
