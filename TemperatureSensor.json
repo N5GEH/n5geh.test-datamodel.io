@@ -2,7 +2,7 @@
 	"$schema": "http://json-schema.org/schema#",
 	"$schemaVersion": "0.0.3",
 	"$id": "https://n5geh.github.io/n5geh.test-datamodel.io/TemperatureSensor.json",
-	"description": "This entity captures the static properties of common iot sensor",
+	"description": "This entity captures the static properties of common temperature sensor",
 	"type": "object",
 	"allOf": [
 		{
