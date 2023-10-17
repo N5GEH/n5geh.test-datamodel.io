@@ -6,7 +6,7 @@
 	"type": "object",
 	"allOf": [
 		{
-			"$ref": "#/definitions/Sensor"
+			"$ref": "https://n5geh.github.io/n5geh.test-datamodel.io/Sensor.json"
 		},
 		{
 			"properties": {
@@ -24,8 +24,5 @@
 				"temperature"
 			]
 		}
-	],
-	"definitions": {
-		"Sensor": "https://n5geh.github.io/n5geh.test-datamodel.io/Sensor.json"
-	}
+	]
 }
