@@ -1,0 +1,31 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"$schemaVersion": "0.0.3",
+	"$id": "http://TODO/TemperatureSensor.json",
+	"description": "This entity captures the static properties of common iot sensor",
+	"type": "object",
+	"allOf": [
+		{
+			"$ref": "#/definitions/Sensor"
+		},
+		{
+			"properties": {
+				"type": {
+					"type": "string",
+					"enum": [
+						"TemperatureSensor"
+					]
+				},
+				"temperature": {
+					"type": "number"
+				}
+			},
+			"required": [
+				"temperature"
+			]
+		}
+	],
+	"definitions": {
+		"Sensor": "https://ToDO/Sensor.json"
+	}
+}

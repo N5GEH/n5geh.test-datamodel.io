@@ -1,0 +1,35 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"$schemaVersion": "0.0.3",
+	"$id": "https://TODO/Sensor.json",
+	"description": "This entity captures the static properties of common iot sensor",
+	"type": "object",
+	"properties": {
+		"type": {
+			"type": "string",
+			"enum": [
+                "Device"
+            ]
+		},
+		"id": {
+			"type": "string"
+		},
+		"documentation": {
+			"type": "string",
+			"format": "uri",
+			"description": "A link to documentation."
+		},
+		"modelName": {
+			"type": "string",
+			"description": "Sensor's model name."
+		},
+		"manufacturer": {
+			"type": "string",
+			"description": "Sensor's manufacturer name."
+		}
+	},
+	"required": [
+		"id",
+		"type"
+	]
+}
