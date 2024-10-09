@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "description": "This entity captures the static properties of an indoor environment sensor, including light, humidity, and location details.",
+    "$schemaVersion": "0.0.3",
+    "$id": "https://n5geh.github.io/n5geh.test-datamodel.io/IndoorEnvironmentSensor.json",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://n5geh.github.io/n5geh.test-datamodel.io/Sensor.json"
+        },
+        {
+            "required": [
+                "temperature",
+                "light",
+                "humidity"
+            ],
+            "properties": {
+                "type": {
+                    "enum": [
+                        "IndoorEnvironmentSensor"
+                    ],
+                    "type": "string"
+                },
+                "light": {
+                    "type": "number",
+                    "description": "Represents the light level in the environment."
+                },
+                "humidity": {
+                    "type": "number",
+                    "description": "Represents the humidity level in the environment."
+                },
+                "hasLocation": {
+                    "type": "string",
+                    "description": "Describes the location where the sensor is installed."
+                },
+                "installedAt": {
+                    "type": "string",
+                    "format": "date-time",
+                    "description": "The timestamp when the sensor was installed."
+                },
+                "temperature": {
+                    "type": "number"
+                }
+            }
+        }
+    ]
+}
